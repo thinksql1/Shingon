@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: The Core Teachings of Mikkyō</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 2rem;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #4682b4;
+            padding-bottom: 1rem;
+        }
+        header h1 {
+            color: #4682b4;
+            margin: 0;
+        }
+        h2 {
+            color: #4682b4;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        .three-mysteries {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .mystery-btn {
+            background: #4682b4;
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            margin: 0.5rem;
+        }
+        .mystery-content {
+            display: none;
+            padding: 1rem;
+            margin-top: 1rem;
+            background: #eef;
+            border-left: 5px solid #4682b4;
+            border-radius: 5px;
+        }
+        .mandala-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .mandala-section img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+            flex-shrink: 0;
+        }
+
+        /* Print Styles */
+        @media print {
+            body { font-size: 12pt; background-color: #fff; }
+            .container { box-shadow: none; max-width: 100%; }
+            .three-mysteries { display: none; } /* Hide interactive element */
+            .mystery-content { display: block !important; border: 1px solid #ccc; } /* Show all content for print */
+            h2 { page-break-before: always; }
+            .mandala-section { page-break-inside: avoid; flex-wrap: wrap; }
+            .mandala-section img { max-width: 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lesson 2: The Core Teachings of Mikkyō</h1>
+        </header>
+
+        <article>
+            <h2>Dainichi Nyorai: The Central Deity</h2>
+            [span_36](start_span)<p>At the very center of the Shingon pantheon is <strong>Dainichi Nyorai</strong> (Skt. Mahāvairocana), the "Great Sun" Buddha[span_36](end_span). [span_37](start_span)Unlike the historical Shakyamuni Buddha, Dainichi Nyorai is not a historical figure but the cosmic, all-encompassing Buddha who is the source of all phenomena in the universe[span_37](end_span). [span_38](start_span)Shingon teachings hold that this central Buddha is the source of many different Buddha-manifestations, each an independent deity in its own right[span_38](end_span). [span_39](start_span)[span_40](start_span)The goal of Shingon practice is to realize one's fundamental identity with this universal Buddha "in this very body"[span_39](end_span)[span_40](end_span).</p>
+
+            <h2>The Three Secret Activities of Body, Speech, and Mind</h2>
+            [span_41](start_span)<p>Shingon practice is based on the "Three Mysteries" or "Three Secrets" (<em>Sammitsu</em>), which are the activities of body, speech, and mind[span_41](end_span). [span_42](start_span)The esoteric teachings systematize these activities and present them as inseparable aspects of a symbolic practice leading to the rapid attainment of enlightenment[span_42](end_span). [span_43](start_span)The practitioner seeks to identify their own actions, words, and thoughts with those of the Buddha[span_43](end_span).</p>
+            <p>Click the buttons below to reveal the secret of each activity:</p>
+
+            <div class="three-mysteries">
+                <button class="mystery-btn" onclick="showContent('body')">Body (Mudra)</button>
+                <button class="mystery-btn" onclick="showContent('speech')">Speech (Mantra)</button>
+                <button class="mystery-btn" onclick="showContent('mind')">Mind (Visualization)</button>
+            </div>
+
+            <div id="body-content" class="mystery-content">
+                <h3>The Secret of Body: Esoteric Mudra</h3>
+                [span_44](start_span)<p>The secret activity of the body involves the use of <strong>mudras</strong>, which are symbolic hand gestures[span_44](end_span). [span_45](start_span)[span_46](start_span)These prescribed postures are not merely symbolic but are believed to form a spiritual connection with the deities and invoke their power, aligning the practitioner's physical form with that of the Buddha[span_45](end_span)[span_46](end_span).</p>
+            </div>
+            <div id="speech-content" class="mystery-content">
+                <h3>The Secret of Speech: Esoteric Mantra Practice</h3>
+                [span_47](start_span)<p>The secret activity of speech is the chanting of <strong>mantras</strong>[span_47](end_span). [span_48](start_span)The term "Shingon" itself means "True Word," referring to these powerful incantations[span_48](end_span). [span_49](start_span)[span_50](start_span)Mantras are not simple prayers but are considered the sacred sounds and syllables that embody the essence of the Buddhas and bodhisattvas, unifying the practitioner's speech with the cosmic truth[span_49](end_span)[span_50](end_span).</p>
+            </div>
+            <div id="mind-content" class="mystery-content">
+                <h3>The Secret of Mind: Internal Visualization</h3>
+                [span_51](start_span)[span_52](start_span)<p>The secret activity of mind is the practice of <strong>internal visualization</strong>, often referred to as meditation (<em>samadhi</em>)[span_51](end_span)[span_52](end_span). [span_53](start_span)The practitioner visualizes deities, Sanskrit syllables, and mandalas in their mind's eye[span_53](end_span). [span_54](start_span)[span_55](start_span)This practice is designed to transform ordinary consciousness into wisdom by focusing the mind and uniting it with the enlightened mind of the Buddha[span_54](end_span)[span_55](end_span).</p>
+            </div>
+
+            <h2>The Dynamic Mandala</h2>
+            <div class="mandala-section">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq4F4SgK7p0jV3F3b3R3c3p3a7f7C7f3k7w&s" alt="Representation of a Buddhist Mandala">
+                <div>
+                    [span_56](start_span)<p>The <strong>mandala</strong> is a core component of Mikkyō ritual and a graphic illustration of the esoteric cosmos[span_56](end_span). [span_57](start_span)Shingon uses a dual mandala system, representing two fundamental aspects of the cosmic truth[span_57](end_span).</p>
+                    <ul>
+                        <li><strong>The Womb World Mandala (Taizōkai):</strong> Based on the Dainichi-kyō, this mandala represents the world of principle and compassion. [span_58](start_span)[span_59](start_span)It is oriented to the east and depicts Dainichi Buddha at the center of an eight-petaled lotus, surrounded by 409 deities in twelve rectangular "halls"[span_58](end_span)[span_59](end_span).</li>
+                        <li><strong>The Diamond World Mandala (Kongōkai):</strong> Based on the Kongōchō-gyō, this mandala represents the world of wisdom. [span_60](start_span)[span_61](start_span)It is oriented to the west and is composed of nine distinct square assemblies, containing a total of 1461 deities, depicting the indestructible nature of enlightenment[span_60](end_span)[span_61](end_span).</li>
+                    </ul>
+                     [span_62](start_span)<p>These are not just art; they are tools for meditation and ritual, helping the practitioner visualize the entire pantheon and their relationship to the central Buddha[span_62](end_span).</p>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <script>
+        function showContent(id) {
+            // Hide all content divs
+            document.getElementById('body-content').style.display = 'none';
+            document.getElementById('speech-content').style.display = 'none';
+            document.getElementById('mind-content').style.display = 'none';
+            
+            // Show the selected one
+            document.getElementById(id + '-content').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
